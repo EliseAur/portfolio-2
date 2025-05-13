@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-grey: #fcfcf8;
+  --color-mint: #f1ffe0;
+  --color-purple: #efebfa;
+  --color-dark-purple: #ca3bd9;
+  --color-pink: #e25bbe;
+  --font-headings: "Work Sans", sans-serif;
+  --font-links: "Manrope", sans-serif;
+}
+
+#root {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none; /* Prevent overscroll behavior */
+}
+
+body {
+  background-color: var(--color-grey);
+}
+
+#about {
+  background-image: url("../images/image-of-me-nature.jpg");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
