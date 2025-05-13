@@ -1,68 +1,61 @@
-import { Link } from "react-router-dom";
-import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export function NavDesktop() {
+export default function NavMobile({ onLinkClick }) {
   return (
-    <nav className="hidden md:flex justify-end w-full flex-2/3">
-      <div className="flex-1/2 space-x-4 flex-grow mx-auto text-center">
-        <Link
-          to="/projects"
-          className={` ${location.pathname === "/projects" ? "underline decoration-2" : ""}`}
+    <nav className="md:hidden fixed top-[48px] left-0 w-full h-[calc(100%-60px)] flex flex-col items-center p-4 bg-grey font-headings uppercase font-bold text-xl pt-50">
+      <div className="flex flex-col space-y-5 text-center">
+        <a
+          href="#projects"
+          onClick={onLinkClick}
+          className="border-2 hover:border-dark-purple hover:text-dark-purple active:border-dark-purple active:text-dark-purple hover:cursor-pointer py-4 px-20 rounded-xs shadow-xs "
         >
           Projects
-        </Link>
-        <Link
-          to="/about"
-          className={` ${location.pathname === "/about" ? "underline decoration-2" : ""}`}
+        </a>
+
+        <a
+          href="#about"
+          onClick={onLinkClick}
+          className="border-2 hover:border-dark-purple hover:text-dark-purple active:border-dark-purple active:text-dark-purple hover:cursor-pointer py-4 px-20 rounded-xs shadow-xs"
         >
           About
-        </Link>
-        <Link
-          to="/contact"
-          className={` ${location.pathname === "/contact" ? "underline decoration-2" : ""}`}
+        </a>
+
+        <a
+          href="#contact"
+          onClick={onLinkClick}
+          className="border-2 hover:border-dark-purple hover:text-dark-purple active:border-dark-purple active:text-dark-purple hover:cursor-pointer py-4 px-20 rounded-xs shadow-xs"
         >
           Contact
-        </Link>
-      </div>
-
-      <div className="flex-1/2 space-x-4 text-right">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGithub} className="text-xl hover:text-gray-400" />
-        </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} className="text-xl hover:text-gray-400" />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} className="text-xl hover:text-gray-400" />
         </a>
       </div>
-    </nav>
-  );
-}
-
-export function NavMobile() {
-  return (
-    <nav className="md:hidden fixed top-[48px] left-0 w-full h-[calc(100%-60px)] flex flex-col items-center justify-center bg-gray-200 p-4">
-      <div className="flex flex-col">
-        <Link
-          to="/projects"
-          className={` ${location.pathname === "/projects" ? "underline decoration-2" : ""}`}
+      <div className="mt-10 space-x-6">
+        <a href="https://github.com/EliseAur" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="text-4xl hover:text-dark-purple hover:cursor-pointer"
+            title="GitHub"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/elise-aurtande/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Projects
-        </Link>
-        <Link
-          to="/about"
-          className={` ${location.pathname === "/about" ? "underline decoration-2" : ""}`}
-        >
-          About
-        </Link>
-        <Link
-          to="/contact"
-          className={` ${location.pathname === "/contact" ? "underline decoration-2" : ""}`}
-        >
-          Contact
-        </Link>
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="text-4xl hover:text-dark-purple hover:cursor-pointer"
+            title="LinkedIn"
+          />
+        </a>
+        <a href="mailto:elise.aurtande@gmail.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="text-4xl hover:text-dark-purple hover:cursor-pointer"
+            title="Email"
+          />
+        </a>
       </div>
     </nav>
   );

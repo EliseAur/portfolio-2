@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavDesktop, NavMobile } from "./index";
@@ -38,11 +38,21 @@ export default function Header() {
     };
   }, [isOpen]);
 
+  // Function to handle link clicks
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
-    <header id="top" className="text-beige font-bold w-full z-20 bg-gray-200">
-      <div className="flex p-3">
-        <div className="flex w-full">
-          <div className="logo w-[200px] flex-1/3">elise aurtande</div>
+    <header className="w-full z-50 sticky top-0 bg-grey shadow-xs">
+      <div className="flex py-3 px-3 sm:pr-5 max-w-[1280px] mx-auto">
+        <div className="flex w-full justify-center items-center">
+          <a
+            href="#top"
+            className="logo w-[200px] flex-1/3 font-black italic text-3xl font-headings hover:text-dark-purple hover:cursor-pointer tracking-tight"
+          >
+            elise aurtande
+          </a>
           <NavDesktop />
           <div className="md:hidden ml-auto">
             <button
@@ -62,9 +72,9 @@ export default function Header() {
       {isOpen && (
         <div
           ref={menuRef}
-          className="fixed top-0 right-0 pl-15 pb-5 rounded-bl-sm font-bold flex flex-col items-center justify-start z-50 md:hidden"
+          className="fixed top-0 right-0 pl-15 pb-5 rounded-bl-sm flex flex-col items-center justify-start z-50 md:hidden"
         >
-          <NavMobile />
+          <NavMobile onLinkClick={handleLinkClick} />
         </div>
       )}
     </header>

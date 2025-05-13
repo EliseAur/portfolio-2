@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import { Header } from "./components";
 import Home from "./pages/Home";
-import "./App.css";
 
 function App() {
   return (
     <Router>
       <Header />
-      <main className="flex flex-col min-h-screen">
+      <main className="flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/projects" element={<ProjectsPage />} />

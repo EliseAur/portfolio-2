@@ -1,5 +1,13 @@
-const HomePage = () => {
-  return <h1>Welcome to My Portfolio</h1>;
-};
+import { AboutSection, Hero, ProjectsSection, ContactSection, Footer } from "../components";
 
-export default HomePage;
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <ProjectsSection />
+      <AboutSection />
+      <ContactSection />
+      <Footer />
+    </>
+  );
+}
