@@ -11,16 +11,15 @@ const projects = [
     projectType: "Project Exam 2",
     title: "Holidaze",
     description: {
-      short:
-        "A platform for booking holiday accommodations and hosting venues. Built with React and Tailwind CSS. Supported by the Noroff API.",
+      short: "A platform for booking holiday accommodations and hosting venues.",
       features:
         "Holidaze is a comprehensive platform where users can book holiday accommodations and also host their own venues. It features property listings, search functionality, and responsive design. The project is built with React and Tailwind CSS and integrates with the Noroff API for managing data.",
       technologies: "React, Tailwind CSS, Noroff API V2",
     },
     keyWords: "React • Tailwind • Noroff API",
     links: {
-      git: "",
-      live: "",
+      git: "https://github.com/EliseAur/holidaze.git",
+      live: "https://elise-holidaze.netlify.app",
     },
     images: {
       desktop: holidazeDesktop,
@@ -33,16 +32,14 @@ const projects = [
     projectType: "JavaScript Frameworks",
     title: "Shop:it",
     description: {
-      short:
-        "A platform for booking holiday accommodations and hosting venues. Built with React and Tailwind CSS. Supported by the Noroff API.",
+      short: "An eCommerce store for browsing, searching, and purchasing products.",
       features:
-        "Holidaze is a comprehensive platform where users can book holiday accommodations and also host their own venues. It features property listings, search functionality, and responsive design. The project is built with React and Tailwind CSS and integrates with the Noroff API for managing data.",
-      technologies: "React, Tailwind CSS, Noroff API V2",
+        "Shop:it lets users browse all products, search with a live look-ahead search bar, and view detailed product pages with reviews and discounts. Users can add items to a cart, view and manage their cart, and complete a checkout process with order confirmation. Includes a contact form with validation. The app uses React Router for navigation and features a custom layout with header, cart icon, and footer.",
     },
     keyWords: "React • Tailwind • Noroff API",
     links: {
-      git: "",
-      live: "",
+      git: "https://github.com/EliseAur/ecom-store",
+      live: "https://ecom-shopit.netlify.app",
     },
     images: {
       desktop: shopitDesktopHome,
@@ -55,21 +52,20 @@ const projects = [
     projectType: "Semester Project 2",
     title: "Aurtande Auctions",
     description: {
-      short:
-        "A platform for booking holiday accommodations and hosting venues. Built with React and Tailwind CSS. Supported by the Noroff API.",
+      short: "An auction platform where users can register, create listings, and place bids.",
       features:
-        "Holidaze is a comprehensive platform where users can book holiday accommodations and also host their own venues. It features property listings, search functionality, and responsive design. The project is built with React and Tailwind CSS and integrates with the Noroff API for managing data.",
-      technologies: "React, Tailwind CSS, Noroff API V2",
+        "Aurtande Auctions allows users to register with their Noroff email, log in, update their avatar, and view their credits. Users can create, update, and delete auction listings with media galleries, place bids on other listings, and view all bids. Unregistered users can browse and search listings. The platform features a responsive design and user-friendly interface.",
+      technologies: "HTML, CSS, JavaScript, SASS, Bootstrap, Noroff API",
     },
-    keyWords: "React • Tailwind • Noroff API",
+    keyWords: "JavaScript • Bootstrap • Noroff API",
     links: {
-      git: "",
-      live: "",
+      git: "https://github.com/EliseAur/aurtande-auctions",
+      live: "https://eliseaur.github.io/aurtande-auctions/",
     },
     images: {
       desktop: aurtandeAuctionsDesktop,
       mobile: aurtandeAuctionsMobile,
-      tablet: "/images/holidaze-tablet.jpg",
+      tablet: "",
     },
   },
 ];
