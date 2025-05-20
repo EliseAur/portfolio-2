@@ -8,7 +8,7 @@ export default function AboutSection() {
       style={{ minHeight: "calc(100vh - 60px)" }}
     >
       <div className="mx-auto w-full max-w-[1112px]">
-        <div className="bg-mint flex flex-row sm:px-5 p-10 mx-4 sm:mx-5 md:mx-0 rounded-xs shadow-xs">
+        <div className="bg-mint flex flex-row sm:px-5 py-8 px-5 mx-4 sm:mx-5 md:mx-0 rounded-xs shadow-xs">
           <div className="md:flex-4/12 hidden sm:flex sm:min-h-[500px] ">
             <img
               src={imageOfMe}
@@ -16,7 +16,7 @@ export default function AboutSection() {
               className="object-cover sm:object-[80%] md:object-right rounded-xs h-full w-full"
             ></img>
           </div>
-          <div className="pl-4 md:px-5 md:flex-8/12 sm:max-w-[350px] md:max-w-none text-sm">
+          <div className=" sm:pl-3 md:px-5 md:flex-8/12 sm:max-w-[350px] md:max-w-none text-sm">
             <h2 className="text-3xl font-headings font-black mb-4 mx-auto tracking-tight">
               About Me
             </h2>
@@ -63,7 +63,10 @@ export default function AboutSection() {
             <p className="mb-4">
               I am also motivated to gain experience with{" "}
               <span className="font-semibold">TypeScript</span>, as it is something I have not
-              prioritized in my current projects but am eager to explore further.{" "}
+              prioritized in my current projects but am eager to explore further. Additionally, I
+              want to improve my understanding of <span className="font-semibold">workflow</span>{" "}
+              and <span className="font-semibold">testing</span> to enhance my development process
+              and ensure higher-quality code.
             </p>
 
             <h3 className="font-headings font-bold text-lg">Interests</h3>

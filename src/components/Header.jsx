@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavDesktop, NavMobile } from "./index";
@@ -7,6 +7,7 @@ import { NavDesktop, NavMobile } from "./index";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const menuRef = useRef(null);
   const toggleButtonRef = useRef(null); // Reference for the toggle button
 
@@ -43,16 +44,26 @@ export default function Header() {
     setIsOpen(false); // Close the menu when a link is clicked
   };
 
+  const handleLogoClick = (e) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      navigate("/");
+    }
+  };
+
   return (
     <header className="w-full z-50 sticky top-0 bg-grey shadow-xs">
       <div className="flex py-3 px-3 sm:pr-5 max-w-[1280px] mx-auto">
         <div className="flex w-full justify-center items-center">
-          <a
-            href="#top"
+          <Link
+            to="/"
+            onClick={handleLogoClick}
             className="logo w-[200px] flex-1/3 font-black italic text-3xl font-headings hover:text-dark-purple hover:cursor-pointer tracking-tight"
           >
             elise aurtande
-          </a>
+          </Link>
           <NavDesktop />
           <div className="md:hidden ml-auto">
             <button

@@ -8,14 +8,14 @@ export default function Hero() {
       style={{ minHeight: "calc(100vh - 60px)" }}
     >
       <div className="flex flex-col items-center md:flex-row max-w-[1280px] mx-auto">
-        <div className="bg-black rounded-xs relative z-10 pl-0 pr-24 sm:pr-40 md:pr-30 lg:pr-50 xl:pr-70 mr-10 md:mr-0 pt-3">
+        <div className="bg-black rounded-xs relative z-10 pl-0 pr-26 sm:pr-40 md:pr-30 lg:pr-50 xl:pr-70 mr-10 md:mr-0 pt-3">
           <img
             src={profileImage}
             alt="Profile"
-            className="w-full rounded-lg max-h-[500px] md:max-h-[550px] "
+            className="w-full rounded-lg max-h-[450px] sm:max-w-[500px] md:max-h-[550px] "
           />
         </div>
-        <div className="bg-mint md:-ml-17 -mt-30 sm:-mt-45 md:mt-0 px-8 sm:px-10 md:px-10 lg:px-20 xl:px-30 md:py-35 lg:py-40 py-15 rounded-xs shadow-sm text-center z-20 ml-10 sm:ml-40">
+        <div className="bg-mint md:-ml-17 -mt-30 sm:-mt-45 md:mt-0 px-5 sm:px-10 md:px-10 lg:px-20 xl:px-30 sm:py-15 md:py-35 lg:py-40 pb-12 pt-8 rounded-xs shadow-sm text-center z-20 ml-10 sm:ml-40 max-w-[336px] md:max-w-none">
           <p className="font-links tracking-tight uppercase text-xs xl:text-sm mb-3">
             Oslo • Noroff • Open to work
           </p>
