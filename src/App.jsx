@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 import Home from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
   return (
@@ -9,11 +10,10 @@ function App() {
       <main className="flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/about" element={<AboutMePage />} />
-          <Route path="/contact" element={<ContactPage />} /> */}
+          <Route path="/projects/:id" element={<ProjectDetail />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }

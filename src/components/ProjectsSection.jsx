@@ -15,7 +15,7 @@ export default function ProjectsSection() {
             key={project.id}
             className="bg-grey rounded-xs shadow-xs max-w-[360px] flex flex-col h-full"
           >
-            <Link to={`/projects/${project.id}`}>
+            <Link to={`/projects/${project.id}`} state={{ fromHome: true }}>
               <div>
                 <img
                   src={project.images.desktop}
@@ -25,7 +25,11 @@ export default function ProjectsSection() {
               </div>
             </Link>
             <div className="p-4 flex flex-col flex-1">
-              <Link to={`/projects/${project.id}`} className="hover:text-dark-purple">
+              <Link
+                to={`/projects/${project.id}`}
+                state={{ fromHome: true }}
+                className="hover:text-dark-purple"
+              >
                 <h3 className="font-headings tracking-tight text-2xl font-black mb-2">
                   {project.title}
                 </h3>
@@ -42,6 +46,7 @@ export default function ProjectsSection() {
 
               <Link
                 to={`/projects/${project.id}`}
+                state={{ fromHome: true }}
                 className="font-semibold underline hover:text-dark-purple hover:decoration-2 underline-offset-3 mb-4"
               >
                 Read more

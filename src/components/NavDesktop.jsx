@@ -1,20 +1,41 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function NavDesktop() {
+  const navigate = useNavigate();
   return (
     <nav className="hidden md:flex justify-end w-full flex-2/3 mt-2">
       <div className="flex-1/2 space-x-6 flex-grow mx-auto text-center uppercase font-links">
-        <a href="#projects" className="hover:text-dark-purple hover:cursor-pointer">
+        <Link
+          to="/"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/", { state: { scrollTo: "projects" } });
+          }}
+        >
           Projects
-        </a>
-        <a href="#about" className="hover:text-dark-purple hover:cursor-pointer">
+        </Link>
+        <Link
+          to="/"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/", { state: { scrollTo: "about" } });
+          }}
+        >
           About
-        </a>
-        <a href="#contact" className="hover:text-dark-purple hover:cursor-pointer">
+        </Link>
+        <Link
+          to="/"
+          onClick={(e) => {
+            e.preventDefault();
+            navigate("/", { state: { scrollTo: "contact" } });
+          }}
+        >
           Contact
-        </a>
+        </Link>
       </div>
       <div className="flex-1/2 space-x-4 text-right">
         <a href="https://github.com/EliseAur" target="_blank" rel="noopener noreferrer">
