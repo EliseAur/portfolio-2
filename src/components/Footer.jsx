@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
-    <footer className="bg-grey text-center py-3 mt-5 font-headings text-black">
+    <footer className="bg-grey text-center py-1 mt-5 font-headings text-black shadow-¨xs">
       <div className="flex justify-center space-x-6">
         <a
           href="https://github.com/EliseAur"
