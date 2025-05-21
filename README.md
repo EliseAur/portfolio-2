@@ -1,6 +1,6 @@
 # Elise Aurtande Portfolio
 
-![Portfolio hero - screenshot](images/readme/home-portfolio-page.jpg)
+![Portfolio hero - screenshot](src/images/readme/home-portfolio-page.jpg)
 
 A simple overview of my second personal portfolio site showcasing my latest web development projects.
 
@@ -12,7 +12,7 @@ This portfolio highlights my work as a web developer, including project descript
 - Responsive and modern design
 - Built with React and Tailwind CSS
 
-![Portfolio projects - screenshot](images/readme/projects-portfolio-page.jpg)
+![Portfolio projects - screenshot](src/images/readme/projects-portfolio-page.jpg)
 
 ## Built With
 
@@ -46,7 +46,7 @@ npm run dev
 
 ### Live Demo
 
-**Link:** https://elise-aurtande@netlify.app
+**Link:** https://elise-aurtande.netlify.app
 
 ## Contributing
 
