@@ -1,12 +1,59 @@
-# React + Vite
+# Elise Aurtande Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio hero - screenshot](images/readme/home-portfolio-page.jpg)
 
-Currently, two official plugins are available:
+A simple overview of my second personal portfolio site showcasing my latest web development projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+This portfolio highlights my work as a web developer, including project description, images and links for Github and Live Sites. It also features an About section and a Contact section.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Showcases multiple projects
+- Responsive and modern design
+- Built with React and Tailwind CSS
+
+![Portfolio projects - screenshot](images/readme/projects-portfolio-page.jpg)
+
+## Built With
+
+- [React.js](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/EliseAur/portfolio-2.git
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running
+
+To run the app, use the following command:
+
+```bash
+npm run dev
+```
+
+### Live Demo
+
+**Link:** https://elise-aurtande@netlify.app
+
+## Contributing
+
+Contributions are welcome! Please open a pull request for any improvements or suggestions.
+
+## Contact
+
+Feel free to contact me if you have any questions or feedback about the project:
+
+[My Linkedin](https://www.linkedin.com/in/elise-aurtande/)
