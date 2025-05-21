@@ -2,11 +2,11 @@
 
 ![Portfolio hero - screenshot](src/images/readme/home-portfolio-page.jpg)
 
-A simple overview of my second personal portfolio site showcasing my latest web development projects.
+A personal portfolio site showcasing my latest web development projects.
 
 ## Description
 
-This portfolio highlights my work as a web developer, including project description, images and links for Github and Live Sites. It also features an About section and a Contact section.
+This portfolio highlights my work as a frontend developer, including project descriptions, images and links for Github and Live Sites. It also features an About section and a Contact section.
 
 - Showcases multiple projects
 - Responsive and modern design

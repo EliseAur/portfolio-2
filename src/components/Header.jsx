@@ -4,6 +4,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { NavDesktop, NavMobile } from "./index";
 
+/**
+ * Header component displays the site logo and navigation menus for desktop and mobile.
+ *
+ * Features:
+ * - Sticky header with site logo that scrolls to top or navigates home
+ * - Desktop and mobile navigation menus
+ * - Responsive hamburger menu with open/close icons
+ * - Closes mobile menu on route change or outside click
+ *
+ * @component
+ * @example
+ * return (
+ *   <Header />
+ * )
+ */
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();

@@ -2,6 +2,19 @@ import { AboutSection, Hero, ProjectsSection, ContactSection, Footer } from "../
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
+/**
+ * Home page component that renders the main sections of the portfolio.
+ *
+ * Features:
+ * - Renders Hero, ProjectsSection, AboutSection, and ContactSection components
+ * - Smoothly scrolls to a section if location.state.scrollTo is set (e.g., from navigation)
+ *
+ * @component
+ * @example
+ * return (
+ *   <Home />
+ * )
+ */
 export default function Home() {
   const location = useLocation();
 

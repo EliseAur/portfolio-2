@@ -2,6 +2,19 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+/**
+ * Footer component displays social media and contact links, as well as copyright information.
+ *
+ * This section includes:
+ * - GitHub, LinkedIn, and email icons with links
+ * - Copyright notice
+ *
+ * @component
+ * @example
+ * return (
+ *   <Footer />
+ * )
+ */
 export default function Footer() {
   return (
     <footer className="bg-grey text-center py-1 mt-5 font-headings text-black shadow-¨xs">

@@ -1,8 +1,22 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import imageOfMe2 from "../images/imsge-of-me-version-2.jpg";
+
+/**
+ * ContactSection component displays contact information and social links.
+ *
+ * This section includes:
+ * - A heading and a short message inviting users to get in touch
+ * - Email, GitHub, and LinkedIn links with icons
+ * - A profile image
+ *
+ * @component
+ * @example
+ * return (
+ *   <ContactSection />
+ * )
+ */
 export default function ContactSection() {
   return (
     <section

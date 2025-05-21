@@ -3,6 +3,22 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 
+/**
+ * NavMobile component displays the mobile navigation menu with internal links and social icons.
+ *
+ * Features:
+ * - Navigation links to Projects, About, and Contact sections (scrolls on homepage)
+ * - Social icons for GitHub, LinkedIn, and email
+ * - Only visible on small screens (hidden on desktop)
+ * - Calls onLinkClick prop to close the menu after navigation
+ *
+ * @component
+ * @param {function} onLinkClick - Optional callback to close the menu after a link is clicked
+ * @example
+ * return (
+ *   <NavMobile onLinkClick={handleLinkClick} />
+ * )
+ */
 export default function NavMobile({ onLinkClick }) {
   const navigate = useNavigate();
 
