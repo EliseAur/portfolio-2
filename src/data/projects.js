@@ -5,6 +5,33 @@ import shopitMobile from "../images/projects/shopit-mobile.jpg";
 import holidazeDesktop from "../images/projects/holidaze-desktop.jpg";
 import holidazeMobileVenue from "../images/projects/holidaze-mobile-venue.jpg";
 
+/**
+ * Array of project objects representing portfolio projects.
+ *
+ * Each project contains:
+ * - id: Unique identifier
+ * - projectType: The type or category of the project
+ * - title: Project name
+ * - description: Object with short and long descriptions, feature list, and technologies used
+ * - keyWords: Technologies and keywords for the project
+ * - links: Object with GitHub and live site URLs
+ * - images: Object with desktop and mobile image imports
+ *
+ * @type {Array<{
+ *   id: number,
+ *   projectType: string,
+ *   title: string,
+ *   description: {
+ *     short: string,
+ *     long: string,
+ *     featuresList: string[],
+ *     technologies: string
+ *   },
+ *   keyWords: string,
+ *   links: { git: string, live: string },
+ *   images: { desktop: string, mobile: string }
+ * }>}
+ */
 const projects = [
   {
     id: 1,

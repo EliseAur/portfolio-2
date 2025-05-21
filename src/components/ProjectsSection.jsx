@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
 import projects from "../data/projects";
 
+/**
+ * ProjectsSection component displays a grid of the latest projects.
+ *
+ * Features:
+ * - Responsive grid layout for project cards
+ * - Each card shows project image, title, type, keywords, and short description
+ * - Links to detailed project page, GitHub repo, and live site
+ *
+ * @component
+ * @example
+ * return (
+ *   <ProjectsSection />
+ * )
+ */
 export default function ProjectsSection() {
   return (
     <section

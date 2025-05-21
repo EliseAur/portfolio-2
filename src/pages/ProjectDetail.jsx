@@ -3,6 +3,22 @@ import projects from "../data/projects";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
+/**
+ * ProjectDetail page displays detailed information about a single project.
+ *
+ * Features:
+ * - Fetches project data by ID from the URL params
+ * - Updates the document title based on the project
+ * - Smoothly scrolls to top if navigated from home
+ * - Shows project images, title, type, keywords, description, features, and links to GitHub/live site
+ * - Handles "project not found" state
+ *
+ * @component
+ * @example
+ * return (
+ *   <ProjectDetail />
+ * )
+ */
 export default function ProjectDetail() {
   const { id } = useParams();
   const project = projects.find((p) => String(p.id) === id);

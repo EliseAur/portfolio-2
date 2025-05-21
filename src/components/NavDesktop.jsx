@@ -4,8 +4,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+/**
+ * NavDesktop component displays the desktop navigation bar with internal links and social icons.
+ *
+ * Features:
+ * - Navigation links to Projects, About, and Contact sections (scrolls on homepage)
+ * - Social icons for GitHub, LinkedIn, and email
+ * - Only visible on medium screens and up (hidden on mobile)
+ *
+ * @component
+ * @example
+ * return (
+ *   <NavDesktop />
+ * )
+ */
 export default function NavDesktop() {
   const navigate = useNavigate();
+
   return (
     <nav className="hidden md:flex justify-end w-full flex-2/3 mt-2">
       <div className="flex-1/2 space-x-6 flex-grow mx-auto text-center uppercase font-links">

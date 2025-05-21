@@ -1,5 +1,20 @@
 import imageOfMe from "../images/image-of-me-nature-v2.jpg";
 
+/**
+ * AboutSection component displays a personal introduction, background, skills, and interests.
+ *
+ * This section includes:
+ * - A profile image
+ * - A summary of professional background and motivation
+ * - A list of technical and soft skills
+ * - A statement of interests and career goals
+ *
+ * @component
+ * @example
+ * return (
+ *   <AboutSection />
+ * )
+ */
 export default function AboutSection() {
   return (
     <section

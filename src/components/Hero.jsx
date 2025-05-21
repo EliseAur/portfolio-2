@@ -1,5 +1,20 @@
 import profileImage from "../images/image-of-me-version-1.jpg";
 
+/**
+ * Hero component displays the main introduction section of the portfolio.
+ *
+ * Features:
+ * - Profile image
+ * - Location and status tagline
+ * - Main heading and short description
+ * - Button to scroll to the projects section
+ *
+ * @component
+ * @example
+ * return (
+ *   <Hero />
+ * )
+ */
 export default function Hero() {
   return (
     <div
