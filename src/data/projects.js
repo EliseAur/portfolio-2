@@ -12,6 +12,8 @@ import cabinLifeDesktop from "../images/projects/cabin-life-desktop.jpg";
 import cabinLifeMobile from "../images/projects/cabin-life-mobile.jpg";
 import rainyDaysDesktop from "../images/projects/rainy-days-desktop.jpg";
 import rainyDaysMobile from "../images/projects/rainy-days-mobile.jpg";
+import scienceMuseumDesktop from "../images/projects/science-museum-desktop.jpg";
+import scienceMuseumMobile from "../images/projects/science-museum-mobile.jpg";
 
 /**
  * Array of project objects representing portfolio projects.
@@ -257,6 +259,33 @@ const projects = [
     images: {
       desktop: rainyDaysDesktop,
       mobile: rainyDaysMobile,
+    },
+  },
+  {
+    id: 8,
+    projectType: "Semester Project 2",
+    title: "Community Science Museum",
+    description: {
+      short:
+        "An accessible, responsive static website for the fictional Community Science Museum, designed and built with semantic HTML and CSS.",
+      long: "The Community Science Museum project involved designing and building a static website for a fictional museum with a strong focus on visual design and accessibility. I created a style tile and interactive prototype in Adobe XD to define the visual language and user flow, targeting children, young adults, researchers, teachers and students. The development phase used semantic HTML and CSS only — no JavaScript — and prioritised responsive layouts and adherence to WCAG guidelines to ensure the site is usable across devices and by people with diverse accessibility needs.",
+      featuresList: [
+        "Design and prototyping in Adobe XD (style tile and interactive prototype)",
+        "Semantic HTML and CSS implementation (no JavaScript)",
+        "Responsive layout optimized for mobile, tablet and desktop",
+        "WCAG-informed design and accessible markup (focus, contrast and semantic structure)",
+        "Targeted content and UX for children, students, teachers, researchers and young adults",
+      ],
+      technologies: "HTML, CSS",
+    },
+    keyWords: " HTML & CSS • Adobe XD • Accessibility • Responsive Design",
+    links: {
+      git: "https://github.com/EliseAur/semester-project-csm",
+      live: "https://extraordinary-horse-1f53a0.netlify.app/",
+    },
+    images: {
+      desktop: scienceMuseumDesktop,
+      mobile: scienceMuseumMobile,
     },
   },
 ];
