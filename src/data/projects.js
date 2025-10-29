@@ -198,7 +198,7 @@ const projects = [
     keyWords: "JavaScript • Bootstrap • SASS • Noroff Social API • HTML • CSS",
     links: {
       git: "https://github.com/EliseAur/workflow-css-frameworks",
-      live: "https://strongertogether-social.netlify.app/",
+      live: "https://eliseaur.github.io/workflow-css-frameworks/",
     },
     images: {
       desktop: strongerTogetherDesktop,
