@@ -27,7 +27,7 @@ export default function ProjectsSection() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-grey rounded-xs shadow-xs max-w-[360px] flex flex-col h-full"
+            className="bg-grey rounded-xs shadow-md max-w-[360px] flex flex-col h-full"
           >
             <Link to={`/projects/${project.id}`} state={{ fromHome: true }}>
               <div>
