@@ -14,6 +14,8 @@ import rainyDaysDesktop from "../images/projects/rainy-days-desktop.jpg";
 import rainyDaysMobile from "../images/projects/rainy-days-mobile.jpg";
 import scienceMuseumDesktop from "../images/projects/science-museum-desktop.jpg";
 import scienceMuseumMobile from "../images/projects/science-museum-mobile.jpg";
+import takklatringLogo from "../images/projects/takklatring-logo-grey.jpg";
+import takklatringMobile from "../images/projects/takklatring-mobile-current.jpg";
 
 /**
  * Array of project objects representing portfolio projects.
@@ -45,6 +47,38 @@ import scienceMuseumMobile from "../images/projects/science-museum-mobile.jpg";
 const projects = [
   {
     id: 1,
+    projectType: "Client project (under development)",
+    title: "Takklatring.no",
+    description: {
+      short:
+        "React + Tailwind frontend with WordPress as a headless CMS; live placeholder deployed, full site under active development.",
+      long: "Initial work: created a Vite + React frontend, built a production bundle and deployed a temporary placeholder to Domeneshop via FTP (FileZilla). WordPress is installed in /innhold and configured as a headless CMS; the WP REST API endpoints have been verified and fetch calls from React have been tested. I adjusted site addresses and .htaccess for the subfolder setup, resolved permalink/plugin conflicts, and validated deployment.\n\nStatus: The main branch currently serves a 'Nettsiden er under utvikling' placeholder at https://takklatring.no. A separate development branch contains experimental responsive home layouts and component work. Final layouts, styles and content are not yet decided — integration will continue once the client provides text and images.",
+      featuresList: [
+        "Temporary 'under development' placeholder live on main branch",
+        "Experimental responsive home layout and components in development branch",
+        "Frontend built with Vite + React and styled with Tailwind CSS",
+        "WordPress installed in /innhold and configured as a headless CMS (WP REST API) — endpoints verified",
+        "Production build tested and deployed via FTP (FileZilla) to Domeneshop for verification",
+        "Adjusted .htaccess and site addresses for subfolder setup",
+        "Resolved permalink/plugin conflicts and tested fetch calls from React",
+        "Logo designed in Adobe Express",
+        "Content and final assets pending from client",
+      ],
+      technologies:
+        "React • Tailwind CSS • WordPress (Headless) • WP REST API • Domeneshop • FTP (FileZilla)",
+    },
+    keyWords: "React • Tailwind • WordPress Headless • WP REST API • Deployment",
+    links: {
+      git: "",
+      live: "https://takklatring.no",
+    },
+    images: {
+      desktop: takklatringLogo,
+      mobile: takklatringMobile,
+    },
+  },
+  {
+    id: 2,
     projectType: "Project Exam 2",
     title: "Holidaze",
     description: {
@@ -80,7 +114,7 @@ const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     projectType: "JavaScript Frameworks",
     title: "Shop:it",
     description: {
@@ -115,7 +149,7 @@ const projects = [
     },
   },
   {
-    id: 3,
+    id: 4,
     projectType: "Semester Project 2",
     title: "Aurtande Auctions",
     description: {
@@ -150,7 +184,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     projectType: "Course assignment - Portfolio",
     title: "Portfolio 1",
     description: {
@@ -176,7 +210,7 @@ const projects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     projectType: "CSS Frameworks & JavaScript 2 - Social media app",
     title: "Stronger Together",
     description: {
@@ -206,7 +240,7 @@ const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     projectType: "Project Exam 1 - Create a blog site",
     title: "Cabin Life",
     description: {
@@ -234,7 +268,7 @@ const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     projectType: "Cross-course project",
     title: "Rainy Days",
     description: {
@@ -262,7 +296,7 @@ const projects = [
     },
   },
   {
-    id: 8,
+    id: 9,
     projectType: "Semester Project 2",
     title: "Community Science Museum",
     description: {
