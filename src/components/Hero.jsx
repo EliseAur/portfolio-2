@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <div
       id="top"
-      className="scroll-mt-[60px] min-h-screen flex items-center justify-center md:mx-3 pb-10"
+      className="scroll-mt-[60px] min-h-screen flex items-center justify-center md:mx-3 pb-10 bg-gray-100"
       style={{ minHeight: "calc(100vh - 60px)" }}
     >
       <div className="flex flex-col items-center md:flex-row max-w-[1280px] mx-auto">

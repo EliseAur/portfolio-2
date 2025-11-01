@@ -60,7 +60,7 @@ export default function ProjectDetail() {
           <img
             src={project.images.mobile}
             alt={project.title}
-            className="hidden md:block h-full object-contain rounded-xs"
+            className="hidden md:block h-full object-contain rounded-xs shadow-xs"
           />
         </div>
         <div className="flex flex-col md:flex-row mt-4 gap-2 max-w-2xl md:ml-5">
