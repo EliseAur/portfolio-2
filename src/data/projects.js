@@ -14,8 +14,8 @@ import rainyDaysDesktop from "../images/projects/rainy-days-desktop.jpg";
 import rainyDaysMobile from "../images/projects/rainy-days-mobile.jpg";
 import scienceMuseumDesktop from "../images/projects/science-museum-desktop.jpg";
 import scienceMuseumMobile from "../images/projects/science-museum-mobile.jpg";
-import takklatringLogo from "../images/projects/takklatring-logo-grey.jpg";
-import takklatringMobile from "../images/projects/takklatring-mobile-current.jpg";
+import takklatringMobile from "../images/projects/takklatring_mobile.jpg";
+import takklatringDesktop from "../images/projects/takklatring_desktop.jpg";
 
 /**
  * Array of project objects representing portfolio projects.
@@ -51,29 +51,30 @@ const projects = [
     title: "Takklatring.no",
     description: {
       short:
-        "React + Tailwind frontend with WordPress as a headless CMS; live placeholder deployed, full site under active development.",
-      long: "Initial work: created a Vite + React frontend, built a production bundle and deployed a temporary placeholder to Domeneshop via FTP (FileZilla). WordPress is installed in /innhold and configured as a headless CMS; the WP REST API endpoints have been verified and fetch calls from React have been tested. I adjusted site addresses and .htaccess for the subfolder setup, resolved permalink/plugin conflicts, and validated deployment.\n\nStatus: The main branch currently serves a 'Nettsiden er under utvikling' placeholder at https://takklatring.no. A separate development branch contains experimental responsive home layouts and component work. Final layouts, styles and content are not yet decided — integration will continue once the client provides text and images.",
+        "React + Tailwind frontend with WordPress as a headless CMS. Service pages, dynamic content and image galleries are now implemented and live.",
+      long: "This is an ongoing client project for a roofing and facade maintenance company. The site is built with a React + Tailwind frontend and uses WordPress as a headless CMS for managing content.\n\nThe homepage structure, services overview and individual service detail pages are implemented. Service content is fetched dynamically from the WordPress REST API, including ACF fields and featured images. WordPress image galleries are rendered in React and enhanced with a modal lightbox using yet-another-react-lightbox.\n\nThe site is deployed to Domeneshop where the React production build is uploaded via FTP. WordPress runs in a subfolder (/innhold) and provides content through the REST API.\n\nImplemented support for custom service ordering via the WordPress menu_order attribute and retrieving them through the REST API in React.\n\nThe project is still under active development. Upcoming work includes the contact page, about page and project portfolio section.",
       featuresList: [
-        "Temporary 'under development' placeholder live on main branch",
-        "Experimental responsive home layout and components in development branch",
-        "Frontend built with Vite + React and styled with Tailwind CSS",
-        "WordPress installed in /innhold and configured as a headless CMS (WP REST API) — endpoints verified",
-        "Production build tested and deployed via FTP (FileZilla) to Domeneshop for verification",
-        "Adjusted .htaccess and site addresses for subfolder setup",
-        "Resolved permalink/plugin conflicts and tested fetch calls from React",
+        "Responsive homepage layout built with React and Tailwind",
+        "Dynamic services overview page fetching content from WordPress",
+        "ServiceDetail pages rendering WordPress content via the REST API",
+        "WordPress image galleries integrated into React",
+        "Modal lightbox for gallery images using yet-another-react-lightbox",
+        "Custom styling for WordPress content blocks and galleries",
+        "Services can be ordered in WordPress using the menu_order attribute and retrieved in the desired order via the REST API.",
+        "Headless WordPress setup running in /innhold",
+        "Production deployment to Domeneshop via FTP (FileZilla)",
         "Logo designed in Adobe Express",
-        "Content and final assets pending from client",
       ],
       technologies:
-        "React • Tailwind CSS • WordPress (Headless) • WP REST API • Domeneshop • FTP (FileZilla)",
+        "React • Vite • Tailwind CSS • WordPress (Headless) • WP REST API • ACF • yet-another-react-lightbox • Domeneshop • FTP (FileZilla)",
     },
-    keyWords: "React • Tailwind • WordPress Headless • WP REST API • Deployment",
+    keyWords: "React • Vite • Tailwind CSS • WordPress (Headless) • REST API • ACF",
     links: {
       git: "",
       live: "https://takklatring.no",
     },
     images: {
-      desktop: takklatringLogo,
+      desktop: takklatringDesktop,
       mobile: takklatringMobile,
     },
   },
@@ -197,9 +198,9 @@ const projects = [
         "Each card contains title, description, screenshot, GitHub link and live demo link",
         "Content updates in WordPress appear on the site via the API",
       ],
-      technologies: "HTML, CSS, JavaScript, WordPress REST API",
+      technologies: "HTML, CSS, JavaScript, WordPress (Headless), REST API",
     },
-    keyWords: "Vanilla JavaScript • WordPress REST API • Headless CMS",
+    keyWords: "JavaScript • HTML & CSS • WordPress (Headless) • REST API",
     links: {
       git: "https://github.com/EliseAur/portfolio-elise-aurtande",
       live: "https://elise-aurtande-portfolio.netlify.app",
@@ -255,9 +256,9 @@ const projects = [
         "Contact page with client-side JavaScript form validation",
         "Responsive, accessible layout implemented with HTML, CSS and vanilla JavaScript",
       ],
-      technologies: "HTML, CSS, JavaScript, Bootstrap, SASS, Noroff Social API",
+      technologies: "JavaScript • HTML & CSS • Wordpress (Headless) • REST API",
     },
-    keyWords: "JavaScript • Bootstrap • SASS • Noroff Social API • HTML • CSS",
+    keyWords: "JavaScript • HTML & CSS • Wordpress (Headless) • REST API",
     links: {
       git: "https://github.com/Noroff-FEU-Assignments/project-exam-1-EliseAur",
       live: "https://teal-cat-7fe9e5.netlify.app/",
@@ -285,7 +286,7 @@ const projects = [
       ],
       technologies: "HTML, CSS, Vanilla JavaScript, WP REST API, Wordpress (Headless CMS)",
     },
-    keyWords: "VanillaJavaScript • HTML&CSS • WP REST API • Wordpress (Headless CMS)",
+    keyWords: "JavaScript • HTML & CSS • WordPress (Headless) • REST API • WooCommerce",
     links: {
       git: "https://github.com/Noroff-FEU-Assignments/cross-course-project-EliseAur",
       live: "https://reverent-babbage-1fd252.netlify.app/",
