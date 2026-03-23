@@ -23,7 +23,7 @@ export default function ProjectsSection() {
       style={{ minHeight: "calc(100vh - 60px)" }}
     >
       <h2 className="text-3xl mb-8 font-headings font-black tracking-tight">Latest projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mx-4">
         {projects.map((project) => (
           <div
             key={project.id}
